@@ -68,6 +68,7 @@ i18n.use(initReactI18next).init({
             title: "Portfolio Website",
             description:
               "A responsive, multi-language portfolio built with React.js and Framer Motion.",
+            repo: "https://github.com/sharabasy/my-portfolio.git",
           },
         },
         skills: {
@@ -158,6 +159,7 @@ i18n.use(initReactI18next).init({
             title: "موقعي الشخصي",
             description:
               "ملف شخصي متعدد اللغات ومبني بـ React.js و Framer Motion.",
+            repo: "https://github.com/sharabasy/my-portfolio.git",
           },
         },
         skills: {
