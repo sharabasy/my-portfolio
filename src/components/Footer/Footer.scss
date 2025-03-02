@@ -1,0 +1,45 @@
+/* 🌍 Footer Styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 10px;
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  box-shadow: 0 -4px 6px var(--shadow);
+  position: relative;
+  overflow: hidden;
+
+  & p {
+    margin: 0;
+  }
+}
+
+/* Dark Mode Styling */
+.footer.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* 🔤 Text Styling */
+.footer-text {
+  transition: color 0.15s ease-in-out;
+}
+
+.footer.dark .footer-text {
+  color: var(--text-light);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    gap: 0;
+  }
+}

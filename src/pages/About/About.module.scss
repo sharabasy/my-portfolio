@@ -1,0 +1,145 @@
+/* 🌍 About Page Styles */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+  padding: 128px 32px;
+  box-sizing: border-box;
+}
+
+/* 🌑 Dark Mode */
+.about.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* 📌 Container */
+.container {
+  max-width: 800px;
+  padding: 32px;
+}
+
+/* 🎨 Headings */
+h1 {
+  font-weight: bold;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+h1.darkText,
+h2.darkText {
+  color: var(--accent-dark);
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 32px;
+  color: var(--text-dark);
+}
+
+/* 🌟 Skills Grid */
+.skillsSection {
+  margin-top: 32px;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+/* 🎯 Skill Cards */
+.skillCard {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: var(--card-light);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease-in-out;
+}
+
+.skillCard.darkCard {
+  background: var(--card-dark);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.skillCard:hover {
+  transform: scale(1.05);
+}
+
+/* 🎭 Skill Icons */
+.skillIcon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--accent-color);
+}
+
+/* 🔘 Buttons */
+.cta {
+  margin-top: 32px;
+}
+
+/* 🔘 Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, #ff3e3e 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn.darkBtn {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #ff3e3e 100%);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn.outline {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn.outline.darkOutline {
+  border-color: var(--accent-dark);
+  color: var(--accent-dark);
+}
+
+.btn.outline:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn.outline.darkOutline:hover {
+  background: var(--accent-dark);
+  color: white;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .skillsGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,94 @@
+/* 🌍 Projects Page Styles */
+.projects {
+  text-align: center;
+  padding: 128px 32px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.repoButton {
+  background: #24292e;
+  color: white;
+}
+
+.repoButton:hover {
+  background: #444d56;
+}
+
+.liveButton {
+  background: #28a745;
+  color: white;
+}
+
+.liveButton:hover {
+  background: #218838;
+}
+
+/* 🌑 Dark Mode */
+.projects.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* 📌 Headings */
+h1 {
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+
+/* 🛠️ Project Grid */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* 🔥 Project Cards */
+.projectCard {
+  padding: 24px;
+  background: var(--card-light);
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s ease-in-out;
+  cursor: pointer;
+  & h3 {
+    margin-top: 16px;
+    font-size: 22px !important;
+    color: var(--accent-color);
+  }
+}
+
+/* 🌑 Dark Mode Project Cards */
+.projectCard.darkCard {
+  background: var(--card-dark);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}

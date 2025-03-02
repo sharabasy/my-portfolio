@@ -1,0 +1,55 @@
+/* 🌍 Global Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+/* 🌙 Default Light Mode */
+:root {
+  --bg-light: #f8f9fa;
+  --text-dark: #222;
+  --bg-dark: #222;
+  --text-light: #fff;
+  --accent-color: #ff6b6b;
+  --accent-hover: #ff8787;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* 🌑 Dark Mode */
+.dark-mode {
+  --bg-color: #121212 !important;
+  --text-color: #e5e5e5 !important;
+  --card-bg: #1e1e1e !important;
+  --shadow: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 🏗️ Container Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+/* 🏆 RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 992px) {
+  .app-container {
+    padding: 0;
+  }
+}

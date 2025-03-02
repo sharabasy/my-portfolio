@@ -1,0 +1,134 @@
+/* 🌍 Home Page Styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 128px 32px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+/* 🌑 Dark Mode */
+.home.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* 🎨 Text Styling */
+h1 {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+h2 {
+  color: var(--text-dark);
+  margin-top: 8px;
+}
+
+/* 🌑 Dark Mode Text */
+.dark h2 {
+  color: var(--text-light);
+}
+
+/* 👤 Profile Image */
+.profileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.profileImage img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  background: var(--bg-light);
+  object-fit: cover;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* 🌑 Dark Mode Profile Image */
+.dark .profileImage img {
+  border: 5px solid var(--text-light);
+  background: var(--bg-dark);
+}
+
+/* Hover Effect */
+.profileImage img:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔘 Buttons */
+.buttons {
+  margin-top: 24px;
+}
+
+/* 🔘 Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, #ff3e3e 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌑 Dark Mode Buttons */
+.dark .btn {
+  background: linear-gradient(135deg, #ff3e3e 0%, var(--accent-color) 100%);
+}
+
+.dark .btn:hover {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #ff3e3e 100%);
+}
+
+/* 🔘 Outline Buttons */
+.btn.outline {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn.outline:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 🌑 Dark Mode Outline Button */
+.dark .btn.outline {
+  border: 2px solid var(--text-light);
+  color: var(--text-light);
+}
+
+.dark .btn.outline:hover {
+  background: var(--text-light);
+  color: var(--bg-dark);
+}
+
+@media (max-width: 992px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
