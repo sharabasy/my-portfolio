@@ -14,7 +14,7 @@ This is my personal portfolio website built with React, Redux, and SCSS.
 2. on Mobile
 ![image](https://github.com/user-attachments/assets/bfabd109-5f35-4358-8133-85fe9f4f85c9)
 
-## Deployed at [Vercel](https://my-portfolio-one-sigma-98.vercel.app/)
+## Deployed at [Vercel](https://my-portfolio-amber-alpha-52.vercel.app/)
 
 ## Installation & Running Locally
 1. Clone this repo:
