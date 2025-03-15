@@ -57,7 +57,7 @@ i18n.use(initReactI18next).init({
             description:
               "A fully responsive personal portfolio website showcasing my skills, projects, and contact details. It features smooth animations, a dark mode, and a multilingual interface.",
             technologies: "React.js, SCSS, TailwindCSS, Framer Motion, i18n",
-            repo: "https://github.com/sharabasy/portfolio",
+            repo: "https://github.com/sharabasy/my-portfolio.git",
             demo: "https://my-portfolio-amber-alpha-52.vercel.app/",
           },
           weatherApp: {
@@ -165,7 +165,7 @@ i18n.use(initReactI18next).init({
             description:
               "موقع شخصي متجاوب بالكامل يعرض مهاراتي، مشاريعي، ومعلومات الاتصال بي. يحتوي على رسوم متحركة سلسة، وضع ليلي، ويدعم تعدد اللغات.",
             technologies: "React.js, SCSS, TailwindCSS, Framer Motion, i18n",
-            repo: "https://github.com/sharabasy/portfolio",
+            repo: "https://github.com/sharabasy/my-portfolio.git",
             demo: "https://my-portfolio-amber-alpha-52.vercel.app/",
           },
           weatherApp: {
