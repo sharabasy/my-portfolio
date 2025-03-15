@@ -52,23 +52,40 @@ i18n.use(initReactI18next).init({
         projects: {
           title: "Projects | My Portfolio",
           heading: "My Projects",
-          project1: {
-            title: "Weather App",
+          portfolio: {
+            title: "Personal Portfolio",
             description:
-              "A React-based app that fetches real-time weather data using OpenWeatherMap API.",
+              "A fully responsive personal portfolio website showcasing my skills, projects, and contact details. It features smooth animations, a dark mode, and a multilingual interface.",
+            technologies: "React.js, SCSS, TailwindCSS, Framer Motion, i18n",
+            repo: "https://github.com/sharabasy/portfolio",
+            demo: "https://my-portfolio-amber-alpha-52.vercel.app/",
+          },
+          weatherApp: {
+            title: "Get Weather App",
+            description:
+              "A React.js application that provides real-time weather information for any city worldwide. It features a dynamic search bar, responsive UI, and optimized API requests for efficient data fetching.",
+            technologies:
+              "React.js, Axios, OpenWeatherMap API, JavaScript, CSS",
             repo: "https://github.com/sharabasy/weatherapp.git",
             demo: "https://weatherapp-rho-rosy.vercel.app/",
           },
-          project2: {
+          adminDashboard: {
             title: "Admin Dashboard",
             description:
-              "A React & Redux-powered admin panel with API integration and analytics.",
+              "A feature-rich admin panel for managing e-commerce store operations. It includes role-based access control, real-time notifications, an interactive dashboard for analytics, dark mode, and multi-language support.",
+            technologies:
+              "React.js, Redux Toolkit, SCSS, TailwindCSS, Firebase, React Router, Axios",
+            repo: "https://github.com/Cella-project/admin-panel.git",
+            demo: "",
           },
-          project3: {
-            title: "Portfolio Website",
+          storeDashboard: {
+            title: "Store Dashboard",
             description:
-              "A responsive, multi-language portfolio built with React.js and Framer Motion.",
-            repo: "https://github.com/sharabasy/my-portfolio.git",
+              "A comprehensive store management system that allows business owners to track inventory, manage orders, authenticate users, receive real-time push notifications, and function in offline mode.",
+            technologies:
+              "React.js, Redux Toolkit, SCSS, TailwindCSS, Firebase, React Router, Axios",
+            repo: "https://github.com/Cella-project/Store-Panel.git",
+            demo: "",
           },
         },
         skills: {
@@ -143,23 +160,40 @@ i18n.use(initReactI18next).init({
         projects: {
           title: "المشاريع | ملفي الشخصي",
           heading: "مشاريعي",
-          project1: {
+          portfolio: {
+            title: "الموقع الشخصي",
+            description:
+              "موقع شخصي متجاوب بالكامل يعرض مهاراتي، مشاريعي، ومعلومات الاتصال بي. يحتوي على رسوم متحركة سلسة، وضع ليلي، ويدعم تعدد اللغات.",
+            technologies: "React.js, SCSS, TailwindCSS, Framer Motion, i18n",
+            repo: "https://github.com/sharabasy/portfolio",
+            demo: "https://my-portfolio-amber-alpha-52.vercel.app/",
+          },
+          weatherApp: {
             title: "تطبيق الطقس",
             description:
-              "تطبيق React.js يجلب بيانات الطقس الحية باستخدام OpenWeatherMap API.",
+              "تطبيق React.js يعرض معلومات الطقس في الوقت الفعلي لأي مدينة حول العالم. يحتوي على شريط بحث ديناميكي، واجهة مستخدم متجاوبة، وطلبات API محسّنة لجلب البيانات بكفاءة.",
+            technologies:
+              "React.js, Axios, OpenWeatherMap API, JavaScript, CSS",
             repo: "https://github.com/sharabasy/weatherapp.git",
             demo: "https://weatherapp-rho-rosy.vercel.app/",
           },
-          project2: {
-            title: "لوحة تحكم المشرف",
+          adminDashboard: {
+            title: "لوحة التحكم الإدارية",
             description:
-              "لوحة تحكم مبنية بـ React و Redux مع تكامل API وتحليلات.",
+              "لوحة تحكم متقدمة لإدارة متاجر التجارة الإلكترونية. تتضمن التحكم في صلاحيات المستخدمين، إشعارات فورية، لوحة تحكم تحليلية تفاعلية، دعم للوضع الليلي، ودعم تعدد اللغات.",
+            technologies:
+              "React.js, Redux Toolkit, SCSS, TailwindCSS, Firebase, React Router, Axios",
+            repo: "https://github.com/Cella-project/admin-panel.git",
+            demo: "",
           },
-          project3: {
-            title: "موقعي الشخصي",
+          storeDashboard: {
+            title: "لوحة تحكم المتجر",
             description:
-              "ملف شخصي متعدد اللغات ومبني بـ React.js و Framer Motion.",
-            repo: "https://github.com/sharabasy/my-portfolio.git",
+              "نظام شامل لإدارة المتاجر يمكن أصحاب الأعمال من تتبع المخزون، إدارة الطلبات، المصادقة على المستخدمين، استقبال الإشعارات الفورية، والعمل في وضع عدم الاتصال.",
+            technologies:
+              "React.js, Redux Toolkit, SCSS, TailwindCSS, Firebase, React Router, Axios",
+            repo: "https://github.com/Cella-project/Store-Panel.git",
+            demo: "",
           },
         },
         skills: {

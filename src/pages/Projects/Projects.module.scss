@@ -14,6 +14,10 @@
   gap: 12px;
   margin-top: 16px;
   justify-content: center;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 button {
@@ -29,6 +33,10 @@ button {
 .repoButton {
   background: #24292e;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .repoButton:hover {
@@ -38,6 +46,10 @@ button {
 .liveButton {
   background: #28a745;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .liveButton:hover {
@@ -59,17 +71,21 @@ h1 {
 
 /* 🛠️ Project Grid */
 .projectGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 /* 🔥 Project Cards */
 .projectCard {
   padding: 24px;
+  box-sizing: border-box;
   background: var(--card-light);
   font-size: 20px;
   border-radius: 8px;
+  width: 450px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.15s ease-in-out;
   cursor: pointer;
@@ -89,6 +105,9 @@ h1 {
 /* 📱 Responsive Design */
 @media (max-width: 992px) {
   .projectGrid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .projectCard {
+    width: 100%;
   }
 }

@@ -10,11 +10,11 @@ export const routes = [
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/about", element: <About /> },
-      { path: "/projects", element: <Projects /> },
-      { path: "/skills", element: <Skills /> },
-      { path: "/contact", element: <Contact /> },
+      { path: "", element: <Home /> },
+      { path: "about", element: <About /> },
+      { path: "projects", element: <Projects /> },
+      { path: "skills", element: <Skills /> },
+      { path: "contact", element: <Contact /> },
     ],
   },
 ];

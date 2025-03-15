@@ -25,7 +25,7 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
-  const location = useLocation(); // Get current route
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.dir = language === "ar" ? "rtl" : "ltr";

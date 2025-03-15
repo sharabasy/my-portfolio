@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.scss";
+import { BsGithub } from "react-icons/bs";
+import { IoLogoVercel } from "react-icons/io5";
 
 const Projects = () => {
   const darkMode = useSelector((state) => state.theme.darkMode);
@@ -13,6 +15,13 @@ const Projects = () => {
     document.title = t("projects.title");
     window.scrollTo(0, 0);
   }, [t]);
+
+  const projectKeys = [
+    "adminDashboard",
+    "storeDashboard",
+    "weatherApp",
+    "portfolio",
+  ];
 
   return (
     <motion.section
@@ -26,9 +35,10 @@ const Projects = () => {
     >
       <h1>{t("projects.heading")}</h1>
       <div className={styles.projectGrid}>
-        {["project1", "project2", "project3"].map((key) => {
+        {projectKeys.map((key) => {
           const repo = t(`projects.${key}.repo`);
           const demo = t(`projects.${key}.demo`);
+          const tech = t(`projects.${key}.technologies`);
 
           const isValidUrl = (url) => {
             try {
@@ -50,15 +60,22 @@ const Projects = () => {
             >
               <h3>{t(`projects.${key}.title`)}</h3>
               <p>{t(`projects.${key}.description`)}</p>
+              <p className={styles.technologies}>
+                <strong>Technologies:</strong> {tech}
+              </p>
               <div className={styles.buttonGroup}>
                 {isValidUrl(repo) && (
                   <a href={repo} target="_blank" rel="noopener noreferrer">
-                    <button className={styles.repoButton}>View Code</button>
+                    <button className={styles.repoButton}>
+                      <BsGithub /> <div>View Code</div>
+                    </button>
                   </a>
                 )}
                 {isValidUrl(demo) && (
                   <a href={demo} target="_blank" rel="noopener noreferrer">
-                    <button className={styles.liveButton}>Live Demo</button>
+                    <button className={styles.liveButton}>
+                      <IoLogoVercel /> <div>Live Demo</div>
+                    </button>
                   </a>
                 )}
               </div>
